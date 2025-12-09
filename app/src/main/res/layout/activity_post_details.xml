@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F9F8"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvPostUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#252330"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="4dp" />
+
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp"
+        android:text="0 likes"
+        android:textColor="#383AAA"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-medium"
+        android:drawablePadding="4dp" />
+
+    <TextView
+        android:id="@+id/tvPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#252330"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:fontFamily="sans-serif" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E8EAED" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Комментарии"
+        android:textColor="#252330"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerComments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:padding="4dp"
+        android:backgroundTint="#FFFFFF">
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:hint="Написать комментарий..."
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#252330"
+            android:textColorHint="#A1A2AB"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/btnSendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_send_comment"
+            android:text="➜"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

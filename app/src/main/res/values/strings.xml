@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name" translatable="false">nexus</string>
+    <string name="input_username">Введите username</string>
+    <string name="input_email">Введите email</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="account_with_login">Уже есть аккаунт</string>
+    <string name="login_email">Введите email</string>
+    <string name="login_password">Введите password</string>
+    <string name="enter_account">Войти в аккаунт</string>
+    <string name="forgotten_password">сбросить пароль</string>
+
+
+    <string name="loading">Загрузка...</string>
+    <string name="error">Ошибка</string>
+    <string name="retry">Повторить</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">OK</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="search">Поиск</string>
+
+    <!-- Профиль -->
+    <string name="profile">Профиль</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="follow">Подписаться</string>
+    <string name="unfollow">Отписаться</string>
+    <string name="following">Подписан</string>
+    <string name="followers">Подписчики</string>
+    <string name="posts">Посты</string>
+    <string name="no_description">Нет описания</string>
+
+    <!-- Сообщения -->
+    <string name="chats">Чаты</string>
+    <string name="messages">Сообщения</string>
+    <string name="send_message">Отправить сообщение</string>
+    <string name="type_message">Введите сообщение...</string>
+    <string name="new_chat">Новый чат</string>
+    <string name="no_messages">Нет сообщений</string>
+    <string name="typing">печатает...</string>
+    <string name="online">В сети</string>
+    <string name="offline">Не в сети</string>
+
+    <!-- Посты -->
+    <string name="create_post">Создать пост</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="write_something">Напишите что-нибудь...</string>
+    <string name="like">Нравится</string>
+    <string name="comment">Комментарий</string>
+    <string name="share">Поделиться</string>
+    <string name="views">Просмотры</string>
+
+    <!-- Ошибки -->
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_server">Ошибка сервера</string>
+    <string name="error_unauthorized">Сессия истекла</string>
+    <string name="error_not_found">Не найдено</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+
+    <!-- Успех -->
+    <string name="success_saved">Сохранено</string>
+    <string name="success_sent">Отправлено</string>
+    <string name="success_deleted">Удалено</string>
+
+    <!-- Диалоги -->
+    <string name="confirm_delete">Подтвердите удаление</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <!-- Пустые состояния -->
+    <string name="empty_chats">Нет чатов</string>
+    <string name="empty_posts">Нет постов</string>
+    <string name="empty_search">Ничего не найдено</string>
+    <string name="empty_notifications">Нет уведомлений</string>
+    <string name="settings">Настройки</string>
+</resources>

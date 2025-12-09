@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/warningText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardUsername"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text=""
+                    android:textColor="#484C81"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+                <ImageView
+                    android:id="@+id/btnCloseCard"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close"
+                    android:tint="@color/blue"
+                    android:contentDescription="Закрыть"
+                    tools:ignore="UseAppTint" />
+
+                <!-- Аватар -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/cardUserAvatar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/btnCloseCard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    tools:src="@drawable/user_profile" />
+
+                <!-- Имя пользователя -->
+                <TextView
+                    android:id="@+id/cardUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardUserAvatar"
+                    android:layout_centerHorizontal="true"
+                    android:text="Загрузка..."
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Описание -->
+                <TextView
+                    android:id="@+id/cardDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardUsername"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center"
+                    android:text="Описание загружается..."
+                    android:textColor="#484C81"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+
+                <LinearLayout
+                    android:id="@+id/statusLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardUsername"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Индикатор статуса (точка) -->
+                    <View
+                        android:id="@+id/cardStatusIndicator"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/status_online" />
+
+                    <!-- Текст статуса -->
+                    <TextView
+                        android:id="@+id/cardStatusText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="В сети"
+                        android:textColor="@color/green_500"
+                        android:textSize="14sp"
+                        tools:text="В сети" />
+
+                </LinearLayout>
+                <!-- Кнопки -->
+                <LinearLayout
+                    android:id="@+id/buttonsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardDescription"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMessage"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="@color/black"
+                        android:text="Написать"
+                        android:textColor="@color/white"
+                        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFollow"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:text="Подписаться"
+                        android:textColor="@color/black"
+                        style="@style/Widget.Material3.Button.OutlinedButton" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</FrameLayout>

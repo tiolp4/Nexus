@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Базовая тема приложения -->
+    <style name="Theme.NexusSocialNetwork" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <!-- Тема для диалогов -->
+    <style name="DialogFullScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <!-- Стиль для круглых изображений -->
+    <style name="CircleImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Стиль для MaterialCardView -->
+    <style name="CardViewStyle" parent="">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <!-- Стиль для кнопок -->
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/button_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <!-- Стиль для EditText -->
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/border_light</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Анимации для диалогов -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Стиль для Toolbar -->
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Стиль для BottomNavigation -->
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/nav_selected</item>
+        <item name="itemTextColor">@color/nav_selected</item>
+        <item name="android:background">@color/nav_background</item>
+    </style>
+</resources>

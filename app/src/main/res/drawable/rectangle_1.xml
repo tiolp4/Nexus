@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Основной фон кнопки -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#1E40AF"
+                android:endColor="#123499"
+                android:angle="0"/>
+            <corners android:radius="28dp"/>
+        </shape>
+    </item>
+
+    <!-- Эффект свечения / наклонного блеска -->
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#33FFFFFF"
+                    android:centerColor="#0DFFFFFF"
+                    android:endColor="#0D000000"
+                    android:angle="0"/>
+                <corners android:radius="28dp"/>
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

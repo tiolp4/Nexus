@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="20dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/commentUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#252330"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#575669"
+        android:textSize="15sp"
+        android:lineSpacingExtra="2dp"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout>
